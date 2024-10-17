@@ -67,7 +67,7 @@ foreach ($User in $OneDriveUsers) {
         }
     } catch {
         # Handle any exceptions that occur during processing
-        Write-Host "Exception occurred for" $OneDriveLink.ToString() -BackgroundColor Black -ForegroundColor Red
+        Write-Host "Exception occurred for" $User.Email.ToString() -BackgroundColor Black -ForegroundColor Red
         Continue
     }
 }
